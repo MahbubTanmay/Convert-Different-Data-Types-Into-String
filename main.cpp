@@ -28,7 +28,11 @@ int main(){
     str = to_string(c);
     cout << "Double to String: " << str << endl;
 
-    str = d;  //This is important. For char no need to use to_string() to convert as char is already a string with single letter
+    str = string(1,c);  //This is important. For other : to_string(variable_name_here) , for char string(repeat_count , char_variable_name)
+    // string(1,'A')   output: A
+    // string(2,'A')   output: AA
+     // string(3,'A')   output: AAA
+    
     cout << "Char to String: " << str << endl;
 
 
